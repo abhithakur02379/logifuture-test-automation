@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://www.stg-google.com",
+  "env":{
+    "environment": "stg"
+  }
+}
