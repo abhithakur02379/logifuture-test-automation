@@ -1,0 +1,19 @@
+{
+  "name": "logifuture-test-automation",
+  "version": "1.0.0",
+  "description": "Logifuture Test Automtion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhithakur02379/logifuture-test-automation.git"
+  },
+  "author": "Abhishek Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhithakur02379/logifuture-test-automation/issues"
+  },
+  "homepage": "https://github.com/abhithakur02379/logifuture-test-automation#readme"
+}
