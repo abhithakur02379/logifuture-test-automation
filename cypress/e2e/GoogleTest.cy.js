@@ -1,4 +1,5 @@
 describe('Google Page Title Test', () => {
+  
     it('should check the title of the page', () => {
 
       const url = Cypress.env('url') || Cypress.config('baseUrl');
