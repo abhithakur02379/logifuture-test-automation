@@ -1,13 +1,5 @@
 const { defineConfig } = require('cypress')
-const path = require("path");
-const fs = require("fs-extra");
-const ping = require('ping');
 
-function getConfigurationByFilename(env) {
-  const pathToConfigFile = path.resolve(".", "cypress/fixtures", `${env}.json`);
-
-  return fs.readJson(pathToConfigFile);
-}
 module.exports = defineConfig({
 
   chromeWebSecurity: false,
@@ -21,18 +13,6 @@ module.exports = defineConfig({
 
   e2e: {
     setupNodeEvents(on, config) {
-      // const file = config.env.configFile || "dev";
-      // return getConfigurationByFilename(file),
-      on('task', {
-        ping(host) {
-          return new Promise((resolve) => {
-            ping.sys.probe(host, (isAlive) => resolve(isAlive))
-          })
-        },
-      })
-    },
-    env: {
-      environment: "dev",
     },
   },
 
