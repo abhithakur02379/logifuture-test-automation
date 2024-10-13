@@ -1,11 +1,18 @@
+const jsonData = require('../fixtures/data.json');
+
 describe('Google Page Title Test', () => {
-  
-    it('should check the title of the page', () => {
 
-      const url = Cypress.env('url') || Cypress.config('baseUrl');
-
-      cy.visit(url);
-
+  jsonData.forEach(testData => {
+    
+    it('it should get the title fo the page', () => {
+      
+      cy.visit(testData.baseUrl);
       cy.title().should('include', 'Google');
+
     });
+
+  });
+
+
+
   });

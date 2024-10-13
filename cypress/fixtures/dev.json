@@ -1,6 +1,0 @@
-{
-    "baseUrl": "https://www.google.com",
-    "env":{
-      "environment": "dev"
-    }
-  }
