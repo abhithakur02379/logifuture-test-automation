@@ -1,10 +1,6 @@
 <h2> Project Title </h2>
 This project is logifuture-test-automation
 
-
-<h2> Getting Started </h2>
-These instructions will get you a copy of the project up and running on your local machine for testing purposes.
-
 <h2> Prerequisites </h2>
 <p> Following software should be installed on the machine:</p>
 <p> 1. Node.js </p>
