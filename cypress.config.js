@@ -9,7 +9,7 @@ module.exports = defineConfig({
   viewportHeight: 1080,
   chromeWebSecurity: false,
   trashAssetsBeforeRuns: true,
-  video: true,
+  video: false,
 
   e2e: {
     setupNodeEvents(on, config) {
