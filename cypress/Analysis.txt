@@ -3,8 +3,8 @@ Please find below the test case description according to my analysis:
 
 1. Login Page Tests - In the scenario I have created 6 test cases which are mentioned below:
 
-    a. Test Case 1 - This is a prositive scenario with an existing user who is trying to login to application with valid email id and password.
-                     As the user is using valid credentials, it logs in successfully and after that I am verifying the page title. Then I have
+    a. Test Case 1 - This is a prositive scenario with an existing user who is trying to sign in to application with valid email id and password.
+                     As the user is using valid credentials, sign in is successful and after that I am verifying the page title. Then I have
                      also intergrated the signout functionality in this to veriy that sign out button is also present.
 
     b. Test Case 2 - This is a negative scenario where user is trying to sign in using wrong password. As the credentials are not correct, system
