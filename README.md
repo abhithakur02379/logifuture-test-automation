@@ -25,3 +25,8 @@ Following software should be installed on the machine:</n>
 <h4> Google Page Title Test - to run this test file from terminal please execute below command </h4>
 
 npx cypress run --browser chrome --headed --spec  "cypress/e2e/GoogleTests.cy.js"
+
+```bash
+ # Install dependencies 
+npm install 
+```
