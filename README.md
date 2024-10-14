@@ -7,7 +7,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 <h3> Prerequisites </h3>
 Following software should be installed on the machine:</n>
-
+<p> </p>
 <p> 1. Node.js </p>
 <p> 2. Cypress </p>
 <p> 3. Git </p>
