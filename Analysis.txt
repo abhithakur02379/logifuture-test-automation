@@ -1,1 +1,33 @@
 
+Please find below the test case description according to my analysis:
+
+1. Login Page Tests - In the scenario I have created 6 test cases which are mentioned below:
+
+    a. Test Case 1 - This is a prositive scenario with an existing user who is trying to sign in to application with valid email id and password.
+                     As the user is using valid credentials, sign in is successful and after that I am verifying the page title. Then I have
+                     also intergrated the signout functionality in this to veriy that sign out button is also present.
+
+    b. Test Case 2 - This is a negative scenario where user is trying to sign in using wrong password. As the credentials are not correct, system
+                     displayes the generic 'error Invalid email or password.'
+
+    c. Test Case 3 - This is also a negative scenario where user is trying to sign in without providing Email Id. As there is no email id provided
+                     system displayes error message as 'Please enter a valid email address'
+
+    d. Test Case 4 - This is also a negative scenario where user is trying to sign in but the Email Id format is not correct. As email id format is
+                     not correct, system displayes error message as 'Please enter a valid email address'
+
+    e. Test Case 5 - This is again a negative scenario where user is trying to sign in but does not provide the password. As password is not
+                     provided, system displayes error message as 'This field cannot be blank'
+
+    f. Test Case 6 - This is a positive scenario where user forgot the password and trying to access the forgot password link. Here I am clicking
+                     on Forgot Password link and then providing the email id of the user to get the forgot password link. I am here validating
+                     the text after user submits email id.
+
+
+2. Google Page Title Tests - In this scenario I have created 2 test cases which are mentioned below:
+
+    a. Test Case 1 - This is a positive scenario where user is trying to access google.com. As the Url is correct and working, user gets a
+                     prositive response and then I vlaidate the title of the page.
+
+    b. Test Case 2 - This is a negative scenario where user is trying to access stg-google.com, which is a non existing environment. When user
+                     sends the request Cypress is unable to vlaidate the Url hence test fails.
