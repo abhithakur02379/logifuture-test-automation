@@ -31,5 +31,5 @@ npx cypress run --browser chrome --headed --spec  "cypress/e2e/LoginTests.cy.js"
 <h4> Google Page Title Test - to run this test file from terminal please execute below command </h4>
 
 ```bash
-npx cypress run --browser chrome --headed --spec  "cypress/e2e/GoogleTests.cy.js"
+npx cypress run --browser chrome --headed --spec  "cypress/e2e/GooglePageTests.cy.js"
 ```
