@@ -13,19 +13,17 @@ Following software should be installed on the machine:</n>
 <p> 3. Git </p>
 
 
----------       Instructions to execute the scenarios are mentioned below       ----------
 
+<h2> Running the tests </h2>
 
-1. Analysis Text file is present with the description of the test scenarios
+<h1> Login Page Tests - to run this test file from terminal please execute below command </h1>
 
-
-
-2. Login Page Tests - to run this test file from terminal please execute below command
-
-    npx cypress run --browser chrome --headed --spec  "cypress/e2e/LoginTests.cy.js"
+    <p> npx cypress run --browser chrome --headed --spec  "cypress/e2e/LoginTests.cy.js" </p>
 
 
 
-3. Google Page Title Test - to run this test file from terminal please execute below command
+<h1> Google Page Title Test - to run this test file from terminal please execute below command </h1>
 
-    npx cypress run --browser chrome --headed --spec  "cypress/e2e/GoogleTests.cy.js"
+   <p> npx cypress run --browser chrome --headed --spec  "cypress/e2e/GoogleTests.cy.js" </p>
+
+
