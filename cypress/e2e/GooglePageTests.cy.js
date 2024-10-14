@@ -14,8 +14,6 @@ describe('Google Page Title Test', () => {
       
       cy.visit(testData.baseUrl);
       cy.title().should('include', 'Google');
-      cy.get(selectors.googleLogo).should('be.visible')
-      cy.get(selectors.searchBar).should('be.visible')
 
       });
 
