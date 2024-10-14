@@ -7,7 +7,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 <h2> Prerequisites </h2>
 <p> Following software should be installed on the machine:</p> <br>
-<p> </p>
 <p> 1. Node.js </p>
 <p> 2. Cypress </p>
 <p> 3. Git </p>
@@ -20,6 +19,10 @@ git clone https://github.com/abhithakur02379/logifuture-test-automation.git
 ```
 
 <p> After successfully cloning the repository please change directory to project folder by executing below command </p>
+
+```bash
+cd logifuture-test-automation
+```
 
 <h2> Running the tests </h2>
 
