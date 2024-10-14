@@ -30,7 +30,7 @@ const selectors = {
 
     });
   
-  
+    // Test Case 1
     it('Sign in successfully with valid credentials', () => {
     
       cy.get(selectors.email, { timeout: 2000 }).should('be.visible').type("abhithakur02379@gmail.com")
@@ -44,7 +44,8 @@ const selectors = {
   
     });
   
-    it('Display an error message for invalid credentials', () => {
+    // Test Case 2
+    it('Display an error message for invalid password', () => {
   
       cy.get(selectors.email, { timeout: 2000 }).should('be.visible').type("abhithakur02379@gmail.com")
       cy.get(selectors.password, { timeout: 2000 }).should('be.visible').type("Test@12345")
@@ -53,6 +54,7 @@ const selectors = {
   
     });
   
+    // Test Case 3
     it('Display an error message when Email is not provided', () => {
   
       cy.get(selectors.email, { timeout: 2000 }).should('be.visible').type(" ")
@@ -62,6 +64,7 @@ const selectors = {
   
     });
   
+    // Test Case 4
     it('Display an error message when Email format is not correct', () => {
   
       cy.get(selectors.email, { timeout: 2000 }).should('be.visible').type("abhithakur02379")
@@ -71,6 +74,7 @@ const selectors = {
   
     });
   
+    // Test Case 5
     it('Display an error message when Password is not provided', () => {
   
       cy.get(selectors.email, { timeout: 2000 }).should('be.visible').type("abhithakur02379@gmail.com")
@@ -80,6 +84,7 @@ const selectors = {
   
     });
   
+    // Test Case 6
     it('Validte Forgot Password link is working', () => {
   
       cy.get(selectors.forgotPasswordLink, { timeout: 2000 }).should('be.visible').click()
