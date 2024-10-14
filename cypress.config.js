@@ -15,7 +15,7 @@ module.exports = defineConfig({
   viewportWidth: 1920,
   viewportHeight: 1080,
   trashAssetsBeforeRuns: true,
-  video: false,
+  video: true,
   screenshotOnRunFailure: true,
   screenshotConfig: {
     overwrite: true

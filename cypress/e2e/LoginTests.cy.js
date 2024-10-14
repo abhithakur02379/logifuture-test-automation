@@ -1,13 +1,9 @@
   
   describe('Login Functionality Tests', () => {
   
-    // const baseUrl = 'https://courses.ultimateqa.com/';
-  
     beforeEach(() => {
 
-      // cy.visit(`${baseUrl}/users/sign_in`);
       cy.visit(Cypress.env('baseUrl')+ '/users/sign_in');
-
 
     });
   
