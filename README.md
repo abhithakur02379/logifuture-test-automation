@@ -16,13 +16,13 @@ Following software should be installed on the machine:</n>
 
 <h2> Running the tests </h2>
 
-<h3> Login Page Tests - to run this test file from terminal please execute below command </h3>
+Login Page Tests - to run this test file from terminal please execute below command
 npx cypress run --browser chrome --headed --spec  "cypress/e2e/LoginTests.cy.js"
 
 
 
-<h1> Google Page Title Test - to run this test file from terminal please execute below command </h1>
+Google Page Title Test - to run this test file from terminal please execute below command
 
-   <p> npx cypress run --browser chrome --headed --spec  "cypress/e2e/GoogleTests.cy.js" </p>
+npx cypress run --browser chrome --headed --spec  "cypress/e2e/GoogleTests.cy.js"
 
 
