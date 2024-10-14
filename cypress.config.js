@@ -6,7 +6,6 @@ function getConfigurationByFilename(env) {
   const pathToConfigFile = path.resolve('.', 'cypress/fixtures', `${env}.json`)
   return fs.readJson(pathToConfigFile)
 }
-
 module.exports = defineConfig({
 
   chromeWebSecurity: false,
@@ -16,7 +15,7 @@ module.exports = defineConfig({
   viewportWidth: 1920,
   viewportHeight: 1080,
   trashAssetsBeforeRuns: true,
-  video: true,
+  video: false,
   screenshotOnRunFailure: true,
   screenshotConfig: {
     overwrite: true
@@ -28,10 +27,6 @@ module.exports = defineConfig({
 
       return getConfigurationByFilename(file)
     },
-    specPattern: 'cypress/e2e/**',
-    env: {
-
-    }
   }
 })
 

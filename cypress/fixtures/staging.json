@@ -1,6 +1,7 @@
 {
+  "env": {
     "baseUrl": "https://www.stg-google.com",
-    "env": {
-      "environment": "staging"
+    "environment" : "staging",
+    "email" : "[id='user_email']"
     }
   }
