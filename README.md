@@ -12,6 +12,12 @@ Following software should be installed on the machine:</n>
 <p> 2. Cypress </p>
 <p> 3. Git </p>
 
+<h2> Clone the repository </h2>
+<p> To clone the repository into your local machine please execute below command </p>
+
+```bash
+git clone https://github.com/abhithakur02379/logifuture-test-automation.git
+```
 
 
 <h2> Running the tests </h2>
