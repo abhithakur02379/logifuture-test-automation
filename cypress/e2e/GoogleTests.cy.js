@@ -1,4 +1,4 @@
-const jsonData = require('../fixtures/data.json');
+const jsonData = require('../fixtures/GoogleTestData.json');
 const selectors = {
 
   googleLogo    : "[class='lnXdpd']",

@@ -17,7 +17,6 @@ const selectors = {
     createNewAccountLink            : "[class='sign-in__sign-up'] > a",
 
   
-  
   };
   
   
@@ -26,7 +25,9 @@ const selectors = {
     const baseUrl = 'https://courses.ultimateqa.com/';
   
     beforeEach(() => {
+
       cy.visit(`${baseUrl}/users/sign_in`);
+
     });
   
   
@@ -46,7 +47,7 @@ const selectors = {
     it('Display an error message for invalid credentials', () => {
   
       cy.get(selectors.email, { timeout: 2000 }).should('be.visible').type("abhithakur02379@gmail.com")
-      cy.get(selectors.password, { timeout: 2000 }).should('be.visible').type("Password")
+      cy.get(selectors.password, { timeout: 2000 }).should('be.visible').type("Test@12345")
       cy.get(selectors.signInButton, { timeout: 2000 }).should('be.visible').click()
       cy.get(selectors.signinNOTSuccessfullMessage, { timeout: 2000 }).should('be.visible').contains('Invalid email or password.')
   
@@ -55,7 +56,7 @@ const selectors = {
     it('Display an error message when Email is not provided', () => {
   
       cy.get(selectors.email, { timeout: 2000 }).should('be.visible').type(" ")
-      cy.get(selectors.password, { timeout: 2000 }).should('be.visible').type("Password")
+      cy.get(selectors.password, { timeout: 2000 }).should('be.visible').type("Test@1234")
       cy.get(selectors.signInButton, { timeout: 2000 }).should('be.visible').click()
       cy.get(selectors.emailError, { timeout: 2000 }).should('be.visible').contains('Please enter a valid email address')
   
@@ -64,7 +65,7 @@ const selectors = {
     it('Display an error message when Email format is not correct', () => {
   
       cy.get(selectors.email, { timeout: 2000 }).should('be.visible').type("abhithakur02379")
-      cy.get(selectors.password, { timeout: 2000 }).should('be.visible').type("Password")
+      cy.get(selectors.password, { timeout: 2000 }).should('be.visible').type("Test@1234")
       cy.get(selectors.signInButton, { timeout: 2000 }).should('be.visible').click()
       cy.get(selectors.emailError, { timeout: 2000 }).should('be.visible').contains('Please enter a valid email address')
   
