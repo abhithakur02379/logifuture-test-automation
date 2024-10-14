@@ -1,4 +1,5 @@
 <h2> Project Title </h2>
+This project is logifuture-test-automation
 
 
 ---------       Instructions to execute the scenarios are mentioned below       ----------
