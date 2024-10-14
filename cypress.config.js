@@ -4,9 +4,9 @@ const fs = require('fs-extra')
 
 function getConfigurationByFilename(env) {
   const pathToConfigFile = path.resolve('.', 'cypress/fixtures', `${env}.json`)
-
   return fs.readJson(pathToConfigFile)
 }
+
 module.exports = defineConfig({
 
   chromeWebSecurity: false,
@@ -17,16 +17,10 @@ module.exports = defineConfig({
   viewportHeight: 1080,
   trashAssetsBeforeRuns: true,
   video: true,
-  retries: {
-    runMode: 2,
-    openMode: 0
-  },
   screenshotOnRunFailure: true,
   screenshotConfig: {
     overwrite: true
   },
-  //numTestsKeptInMemory: 0,
-  //experimentalMemoryManagement: true`
 
   e2e: {
     async setupNodeEvents(on, config) {
