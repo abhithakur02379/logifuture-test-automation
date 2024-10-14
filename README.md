@@ -27,6 +27,6 @@ Following software should be installed on the machine:</n>
 npx cypress run --browser chrome --headed --spec  "cypress/e2e/GoogleTests.cy.js"
 
 ```bash
- # Install dependencies 
+
 npm install 
 ```
