@@ -1,9 +1,0 @@
-[{
-    "baseUrl":"https://www.google.com",
-    "env":"prod"
-},
-{
-    "baseUrl":"https://www.stg-google.com",
-    "env":"stg"
-}
-]

@@ -1,29 +1,44 @@
 const { defineConfig } = require('cypress')
+const path = require('path')
+const fs = require('fs-extra')
 
+function getConfigurationByFilename(env) {
+  const pathToConfigFile = path.resolve('.', 'cypress/fixtures', `${env}.json`)
+
+  return fs.readJson(pathToConfigFile)
+}
 module.exports = defineConfig({
 
   chromeWebSecurity: false,
   defaultCommandTimeout: 30000,
-  pageLoadTimeout: 60000,
+  pageLoadTimeout: 90000,
+  responseTimeout: 60000,
   viewportWidth: 1920,
   viewportHeight: 1080,
-  chromeWebSecurity: false,
   trashAssetsBeforeRuns: true,
-  video: false,
+  video: true,
+  retries: {
+    runMode: 2,
+    openMode: 0
+  },
+  screenshotOnRunFailure: true,
+  screenshotConfig: {
+    overwrite: true
+  },
+  //numTestsKeptInMemory: 0,
+  //experimentalMemoryManagement: true`
 
   e2e: {
-    setupNodeEvents(on, config) {
+    async setupNodeEvents(on, config) {
+      const file = config.env.configFile
 
-      on("before:browser:launch", (browser = {}, launchOptions) => {
-        console.log(launchOptions.args);
-        if (browser.family === 'chromium' && browser.name !== 'electron') {
-          launchOptions.args.push("--incognito");
-          return launchOptions;
-        }
-        
-      })
+      return getConfigurationByFilename(file)
     },
-  },
+    specPattern: 'cypress/e2e/**',
+    env: {
 
-  
-});
+    }
+  }
+})
+
+
