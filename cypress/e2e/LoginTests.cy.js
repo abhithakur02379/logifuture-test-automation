@@ -1,22 +1,3 @@
-// const selectors = {
-
-//     email                           : "[id='user[email]']",
-//     password                        : "[id='user[password]']",
-//     signInButton                    : "[class='button button-primary g-recaptcha']",
-//     signinSuccessfullMessage        : "[data-message='Signed in successfully.']",
-//     formSearch                      : "[class='form__search']",
-//     userDropdown                    : "[class='dropdown__toggle-button']",
-//     signOutButton                   : "[href='/users/sign_out']",
-//     signinNOTSuccessfullMessage     : "[class='form-error__list-item']",
-//     emailError                      : "[id='user[email]-error']",
-//     passwordError                   : "[id='user[password]-error']",
-//     forgotPasswordLink              : "[class='form__forgot-password']",
-//     passwordResetHeading            : "[class='password-reset__heading']",
-//     submitButton                    : "[type='submit']",
-//     passwordResetText               : "[class='password-reset__sent']>h2",
-  
-//   };
-  
   
   describe('Login Functionality Tests', () => {
   
