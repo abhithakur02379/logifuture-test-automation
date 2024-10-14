@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/abhithakur02379/logifuture-test-automation#readme",
   "devDependencies": {
-    "cypress": "^13.15.0"
+    "cypress": "^13.15.0",
+    "faker": "^5.5.3"
   },
   "dependencies": {
     "fs-extra": "^11.2.0",

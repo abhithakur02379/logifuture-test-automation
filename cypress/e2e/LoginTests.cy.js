@@ -15,10 +15,7 @@ const selectors = {
     submitButton                    : "[type='submit']",
     passwordResetText               : "[class='password-reset__sent']>h2",
     createNewAccountLink            : "[class='sign-in__sign-up'] > a",
-    createNewAccountHeading         : "[id='create-account'] > h2",
-    firstName                       : "[id='user[first_name]']",
-    lastName                        : "[id='user[last_name]']",
-    userTermsCheckbox               : "[id='user[terms]']"
+
   
   
   };
@@ -91,6 +88,7 @@ const selectors = {
       cy.get(selectors.passwordResetText, { timeout: 2000 }).should('be.visible').contains('Help is on the way!')
   
     });
+
   
   
   });
