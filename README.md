@@ -2,6 +2,16 @@
 This project is logifuture-test-automation
 
 
+<h2> Getting Started </h2>
+These instructions will get you a copy of the project up and running on your local machine for testing purposes.
+
+<h1> Prerequisites </h1>
+Following software should be installed on the machine:
+1. Node.js
+2. Cypress
+3. Git
+
+
 ---------       Instructions to execute the scenarios are mentioned below       ----------
 
 
