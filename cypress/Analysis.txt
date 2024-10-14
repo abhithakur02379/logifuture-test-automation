@@ -22,3 +22,12 @@ Please find below the test case description according to my analysis:
     f. Test Case 6 - This is a positive scenario where user forgot the password and trying to access the forgot password link. Here I am clicking
                      on Forgot Password link and then providing the email id of the user to get the forgot password link. I am here validating
                      the text after user submits email id.
+
+
+2. Google Page Title Tests - In this scenario I have created 2 test cases which are mentioned below:
+
+    a. Test Case 1 - This is a positive scenario where user is trying to access google.com. As the Url is correct and working, user gets a
+                     prositive response and then I vlaidate the title of the page.
+
+    b. Test Case 2 - This is a negative scenario where user is trying to access stg-google.com, which is a non existing environment. When user
+                     sends the request Cypress is unable to vlaidate the Url hence test fails.
