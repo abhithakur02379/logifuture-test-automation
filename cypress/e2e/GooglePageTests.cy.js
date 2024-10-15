@@ -6,7 +6,7 @@ describe('Google Page Title Test', () => {
       
       cy.clearAllCookies()
       cy.clearAllLocalStorage()
-      cy.visit(Cypress.env('baseUrl'));
+      cy.visit('/');
       cy.title().should('include', 'Google');
 
       });

@@ -1,7 +1,0 @@
-{
-  "env": {
-    "baseUrl": "https://www.google.com",
-    "environment" : "production"
-    }
-    
-}

@@ -3,14 +3,13 @@
   
     beforeEach(() => {
 
-      cy.visit(Cypress.env('baseUrl')+ '/users/sign_in');
+      cy.visit('/' + '/users/sign_in');
 
     });
   
     // Test Case 1
     it('Sign in successfully with valid credentials', () => {
     
-      
       cy.get(Cypress.env('email'), { timeout: 2000 }).should('be.visible').type("abhithakur02379@gmail.com")
       cy.get(Cypress.env('password'), { timeout: 2000 }).should('be.visible').type("Test@1234")
       cy.get(Cypress.env('signInButton'), { timeout: 2000 }).should('be.visible').click()

@@ -1,6 +1,0 @@
-{
-  "env": {
-    "baseUrl": "https://www.stg-google.com",
-    "environment" : "staging"
-    }
-  }
