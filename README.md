@@ -27,7 +27,7 @@ cd logifuture-test-automation
 <h5> Production Environment <h5>
 
 ```bash
-npx cypress run --env configFile=login-prod --browser chrome --headed --spec  "cypress/e2e/LoginTests.cy.js"
+npx cypress run --env configFile=login-prod --browser chrome --headed --spec "cypress/e2e/LoginTests.cy.js"
 ```
 
 <h4> Google Page Title Test </h4>
@@ -35,11 +35,11 @@ npx cypress run --env configFile=login-prod --browser chrome --headed --spec  "c
 <h5> Production Environment <h5>
 
 ```bash
-npx cypress run --env configFile=google-prod --browser chrome --headed --spec  "cypress/e2e/GooglePageTests.cy.js"
+npx cypress run --env configFile=google-prod --browser chrome --headed --spec "cypress/e2e/GooglePageTests.cy.js"
 ```
 
 <h5> Staging Environment <h5>
 
 ```bash
-npx cypress run --env configFile=google-stg --browser chrome --headed --spec  "cypress/e2e/GooglePageTests.cy.js"
+npx cypress run --env configFile=google-stg --browser chrome --headed --spec "cypress/e2e/GooglePageTests.cy.js"
 ```
